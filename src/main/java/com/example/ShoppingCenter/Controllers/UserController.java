@@ -1,8 +1,6 @@
 package com.example.ShoppingCenter.Controllers;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +14,7 @@ import com.example.ShoppingCenter.services.UserService;
 import jakarta.servlet.http.HttpSession;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin
 public class UserController {
 	@Autowired
 	private UserService userservice;
