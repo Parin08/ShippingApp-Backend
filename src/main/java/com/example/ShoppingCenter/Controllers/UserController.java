@@ -14,7 +14,7 @@ import com.example.ShoppingCenter.services.UserService;
 import jakarta.servlet.http.HttpSession;
 
 @RestController
-@CrossOrigin
+@CrossOrigin("*")
 public class UserController {
 	@Autowired
 	private UserService userservice;
