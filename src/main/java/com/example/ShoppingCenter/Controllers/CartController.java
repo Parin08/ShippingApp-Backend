@@ -20,7 +20,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @RestController
-@CrossOrigin(origins = "https://parin08.github.io/ShoppingApp-Fronend/", allowCredentials = "true")
+@CrossOrigin(origins = "*", allowCredentials = "true")
 
 public class CartController {
 	@Autowired
