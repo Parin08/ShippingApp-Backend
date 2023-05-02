@@ -20,7 +20,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000/", allowCredentials = "true")
+@CrossOrigin(origins = "*", allowCredentials = "true")
 
 public class CartController {
 	@Autowired
