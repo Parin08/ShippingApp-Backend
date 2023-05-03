@@ -69,7 +69,7 @@ public class UserController {
 	public boolean authorise() {
 		if (SessionCreator.getSession() != null) {
 			UserModel usermodel = (UserModel) SessionCreator.getSession().getAttribute("user");
-			System.out.println(usermodel);
+		
 			if (usermodel.getUsername().equals("pate0468") && usermodel.getPassword().equals("3Cfe170c$")) {
 				return true;
 			} else
