@@ -33,4 +33,14 @@ public class UserService {
 		}
 		return null;
 	}
+	
+	public boolean isUnique(String username) {
+		
+		for(User u:userdaoimpl.getUsers()) {
+			if(u.getUsername().equals(username)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }

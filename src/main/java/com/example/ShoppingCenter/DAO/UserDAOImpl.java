@@ -1,8 +1,9 @@
 
   package com.example.ShoppingCenter.DAO;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
 import com.example.ShoppingCenter.models.User;
 
@@ -17,6 +18,10 @@ public class UserDAOImpl {
 	  
 	  public User findUser(String username,String password) {
 		  return userdao.findUserByUserNameAndPassword(username, password);
+	  }
+	  
+	  public List<User> getUsers(){
+		  return userdao.findAll();
 	  }
 	  
   }
